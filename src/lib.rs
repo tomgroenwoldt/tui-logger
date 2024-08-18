@@ -413,7 +413,7 @@ lazy_static! {
     static ref TUI_LOGGER: TuiLogger = {
         let hs = HotSelect {
             hashtable: HashMap::with_capacity(1000),
-            default: LevelFilter::Info,
+            default: LevelFilter::Debug,
         };
         let hl = HotLog {
             events: CircularBuffer::new(1000),
