@@ -423,7 +423,7 @@ lazy_static! {
             events: CircularBuffer::new(10000),
             total_events: 0,
             dump: None,
-            default: LevelFilter::Info,
+            default: LevelFilter::Debug,
             targets: LevelConfig::new(),
         };
         TuiLogger {
